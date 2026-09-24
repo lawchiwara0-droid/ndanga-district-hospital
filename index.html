@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home · Ndanga District Hospital</title>
+  <meta name="description" content="Public information for Ndanga District Hospital: services, visiting guidance, notices and contact details.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="demo-banner">Demonstration website &mdash; public information subject to hospital verification.</div>
+  <header class="site-header">
+    <div class="header-bar">
+      <a class="brand" href="index.html">
+        <span class="brand-name">Ndanga District Hospital</span>
+        <span class="brand-tagline">Trusted care for our community.</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">
+        <span aria-hidden="true">&#9776;</span> Menu
+      </button>
+    </div>
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="visiting.html">Visiting Guide</a></li>
+          <li><a href="notices.html">Notices</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        <li class="nav-emergency"><a href="emergency.html">Emergency</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="tagline">Trusted care for our community.</p>
+        <h1>Public information for Ndanga District Hospital</h1>
+        <p class="lede">Find approved information about hospital services, visiting guidance, public notices, contact details and directions.</p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="contact.html">Find Us</a>
+          <a class="btn btn-secondary" href="services.html">Our Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container emergency-box">
+        <h2>Emergency information</h2>
+        <p>If you or someone else has a medical emergency, go directly to Ndanga District Hospital or use the official emergency contact number. This website cannot provide emergency care, medical diagnosis or urgent clinical support.</p>
+        <a class="btn btn-primary" href="emergency.html">Emergency guidance</a>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container">
+        <h2>Quick access</h2>
+        <div class="card-grid card-grid-4">
+          <a class="card" href="services.html"><h3>Services</h3><p>What the hospital offers, once verified.</p></a>
+          <a class="card" href="visiting.html"><h3>Visiting Guide</h3><p>What to know before you visit a patient.</p></a>
+          <a class="card" href="notices.html"><h3>Notices</h3><p>Approved updates and health campaigns.</p></a>
+          <a class="card" href="contact.html"><h3>Contact &amp; Location</h3><p>Reach the hospital and get directions.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Serving the Ndanga community</h2>
+        <p>Ndanga District Hospital is a health facility serving people in Ndanga, Zaka District and surrounding communities. This website provides public information to help patients, visitors and community members access hospital guidance more easily.</p>
+        <p class="section-note">Service area wording to be verified by hospital management.</p>
+        <a class="btn btn-secondary" href="about.html">Learn more</a>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container">
+        <h2>Latest notices</h2>
+        <div class="notice">
+          <strong>Welcome to the Ndanga District Hospital public information website</strong>
+          <p class="notice-meta">To be updated</p>
+        </div>
+        <div class="notice">
+          <strong>Hospital services and clinic information are being verified</strong>
+          <p class="notice-meta">To be updated</p>
+        </div>
+        <div class="notice">
+          <strong>Check back for approved notices and community health campaigns</strong>
+          <p class="notice-meta">To be updated</p>
+        </div>
+        <a class="btn btn-secondary" href="notices.html">View all notices</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="container contact-grid">
+        <div>
+          <h2>Contact and location</h2>
+          <dl class="contact-list">
+            <dt>Location</dt><dd>Ndanga, Zaka District, Masvingo Province</dd>
+            <dt>Official telephone</dt><dd>To be verified</dd>
+            <dt>Official email</dt><dd>To be verified</dd>
+          </dl>
+          <div class="button-row" style="margin-top:1rem;">
+            <!-- TODO: replace # with the hospital's approved Google Maps / OpenStreetMap link once confirmed -->
+            <a class="btn btn-primary" href="#" data-placeholder="true">Get Directions</a>
+            <a class="btn btn-secondary" href="contact.html">Contact information</a>
+          </div>
+        </div>
+        <div class="map-placeholder">Map will be added once management approves an official location link.</div>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container">
+        <h2>Quick health reminder</h2>
+        <p>Prevent illness: wash hands, use safe water and seek care early when unwell.</p>
+        <a class="btn btn-secondary" href="community-health.html">Community health</a>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Ndanga District Hospital &mdash; Demonstration website.</p>
+      <p>Information is subject to verification by hospital management.</p>
+      <p class="footer-links">
+        <a href="privacy.html">Privacy &amp; Disclaimer</a>
+        <a href="contact.html">Contact</a>
+      </p>
+      <div class="disclaimer">
+        <p>This website provides general information only. It does not replace advice, examination, diagnosis or treatment from a qualified health professional.</p>
+        <p>For urgent medical emergencies, go directly to the hospital or use official emergency contacts. Do not rely on this website for emergency care.</p>
+      </div>
+    </div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+
+</body>
+</html>

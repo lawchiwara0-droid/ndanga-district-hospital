@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notices · Ndanga District Hospital</title>
+  <meta name="description" content="Notices and updates from Ndanga District Hospital.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="demo-banner">Demonstration website &mdash; public information subject to hospital verification.</div>
+  <header class="site-header">
+    <div class="header-bar">
+      <a class="brand" href="index.html">
+        <span class="brand-name">Ndanga District Hospital</span>
+        <span class="brand-tagline">Trusted care for our community.</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">
+        <span aria-hidden="true">&#9776;</span> Menu
+      </button>
+    </div>
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="visiting.html">Visiting Guide</a></li>
+          <li><a href="notices.html" aria-current="page">Notices</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        <li class="nav-emergency"><a href="emergency.html">Emergency</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section>
+      <div class="container">
+        <h1>Notices and updates</h1>
+        <div class="filter-bar" role="group" aria-label="Filter notices by category">
+          <button class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="service" aria-pressed="false">Service Updates</button>
+          <button class="filter-btn" data-filter="campaign" aria-pressed="false">Community Campaigns</button>
+          <button class="filter-btn" data-filter="general" aria-pressed="false">General Notices</button>
+        </div>
+
+        <div id="noticeList">
+          <div class="notice" data-category="general">
+            <span class="notice-tag">General</span>
+            <div><strong>Welcome to the Ndanga District Hospital public information website</strong></div>
+            <p class="notice-meta">Demonstration content &mdash; pending hospital verification</p>
+          </div>
+          <div class="notice" data-category="service">
+            <span class="notice-tag">Service Update</span>
+            <div><strong>Hospital services and clinic information are being verified</strong></div>
+            <p class="notice-meta">Demonstration content &mdash; pending hospital verification</p>
+          </div>
+          <div class="notice" data-category="campaign">
+            <span class="notice-tag">Community Campaign</span>
+            <div><strong>Check back for approved community health campaigns</strong></div>
+            <p class="notice-meta">Demonstration content &mdash; pending hospital verification</p>
+          </div>
+        </div>
+        <p class="empty-state" id="emptyState" hidden>No current verified notices in this category.</p>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Ndanga District Hospital &mdash; Demonstration website.</p>
+      <p>Information is subject to verification by hospital management.</p>
+      <p class="footer-links">
+        <a href="privacy.html">Privacy &amp; Disclaimer</a>
+        <a href="contact.html">Contact</a>
+      </p>
+      <div class="disclaimer">
+        <p>This website provides general information only. It does not replace advice, examination, diagnosis or treatment from a qualified health professional.</p>
+        <p>For urgent medical emergencies, go directly to the hospital or use official emergency contacts. Do not rely on this website for emergency care.</p>
+      </div>
+    </div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+
+</body>
+</html>
